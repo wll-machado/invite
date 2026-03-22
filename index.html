@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Invite</title>
+</head>
+<body>
+    <main>
+
+        <!-- GAME OVER -->
+        <div id="gameOver" class="overlay hidden">
+            <div class="modal">
+                <h1>Game Over 💔</h1>
+                <button onclick="restartGame()">Reiniciar</button>
+            </div>
+        </div>
+
+        <!-- FLUXO YES -->
+        <div id="yesFlow" class="overlay hidden">
+        <div class="modal" id="yesContent">
+            <!-- conteúdo vai ser trocado via JS -->
+        </div>
+        </div>
+
+        <!-- MUSICA -->
+        <audio id="music" src="/assets/Dandelions.mp3"></audio>
+
+        <div class="container">
+
+            <div class="hearts">
+                <img class="heart heart1" src="assets/heart.png" alt="heart1">
+                <img class="heart heart2" src="assets/heart.png" alt="heart2">
+                <img class="heart heart3" src="assets/heart.png" alt="heart3">
+                <img class="heart heart4" src="assets/heart.png" alt="heart4">
+                <img class="heart heart5" src="assets/heart.png" alt="heart5">
+            </div>
+
+
+
+            <div class="buttons" id="buttons">
+                <button class="yes" onclick="handleYes()">
+                    YES
+                </button>
+
+                <button class="no" onclick="handleNo()">
+                    NO
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
